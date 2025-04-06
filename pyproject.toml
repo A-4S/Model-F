@@ -7,15 +7,21 @@ authors = [
 ]
 readme = "README.md"
 requires-python = ">=3.13"
+dynamic = [ "classifiers" ]
 dependencies = [
-    "pydantic (>=2.10.6,<3.0.0)"
+    "pydantic (>=2.10.6,<3.0.0)",
+    "pipe-fp (>=1.1.7,<2.0.0)",
 ]
 
 [tool.poetry]
+packages = [
+    {include = "model_f", from = "src"},
+]
+classifiers = [
+]
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.11.0"
-rich = "^13.9.4"
 pytest = "^8.3.5"
 
 [build-system]
