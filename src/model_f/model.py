@@ -8,8 +8,8 @@ from pydantic import (
     create_model,
 )
 
-from model_f.type import FDDict, FieldDefinition
-from model_f.util import mask
+from .type import FDDict, FieldDefinition
+from .util import mask
 
 
 def field_definition(p: Parameter) -> FieldDefinition:
