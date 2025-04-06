@@ -1,1 +1,4 @@
-from .FieldDefinition import FieldDefinition, FDDict
+from .FieldDefinition import (
+    FieldDefinition as FieldDefinition,
+    FDDict as FDDict
+)
