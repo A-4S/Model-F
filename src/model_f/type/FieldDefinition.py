@@ -1,3 +1,6 @@
-from typing import Dict
+from typing import Dict, Any
 
-type FieldDefinition[T] = Dict[str, tuple[type[T], T]]
+
+type FieldDefinition[T=Any] = tuple[type[T], T] | type[T]
+
+type FDDict[T=Any] = Dict[str, FieldDefinition[T]]
