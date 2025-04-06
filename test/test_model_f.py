@@ -1,5 +1,5 @@
 from model_f import model_f
-from .lib import filter_keys, func_demo
+from .library import filter_keys, func_demo
 
 def test_model_f():
     TestModelA = model_f('TestModelA')(func_demo)
