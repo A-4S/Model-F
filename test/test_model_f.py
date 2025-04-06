@@ -1,13 +1,5 @@
 from model_f import model_f
-
-
-def func_demo(a: int, x, b=2, c: int=3): ...
-
-def filter_keys[T](exclude: dict[str, bool]):
-    def execute_filter(d: dict[str, T]):
-        return dict(filter(lambda e: not exclude.get(e[0]), d.items()))
-    
-    return execute_filter
+from .lib import filter_keys, func_demo
 
 def test_model_f():
     TestModelA = model_f('TestModelA')(func_demo)
