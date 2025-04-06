@@ -1,6 +1,6 @@
 [project]
 name = "model-f"
-version = "0.2.0"
+version = "0.2.1"
 description = "Easily create Pydantic models from functions. 🍵"
 authors = [
     {name = "A-4S",email = "dev.forsythe@gmail.com"}
